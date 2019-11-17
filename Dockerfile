@@ -1,6 +1,6 @@
 # download the required node base image
 FROM httpd
-
+RUN npm install
 # copy all the files including node_modules directory
 COPY dist/MyApp/ /usr/local/apache2/htdocs/
 
